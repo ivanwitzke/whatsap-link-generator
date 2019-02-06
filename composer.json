@@ -1,0 +1,15 @@
+{
+    "name": "ivanwitzke/whatsapp-link-generator",
+    "description": "Generates the correct call link for mobile and web",
+    "type": "project",
+    "require": {
+        "mobiledetect/mobiledetectlib": "^2.8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anderson Ivan Witzke",
+            "email": "ivan.witzke@gmail.com"
+        }
+    ]
+}
