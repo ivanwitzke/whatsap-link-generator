@@ -5,13 +5,13 @@ $detect = new \Detection\MobileDetect;
 $phone = isset($_GET['phone']) ? $_GET['phone'] : null;
 $text = isset($_GET['text']) ? $_GET['text'] : null;
 
-if (!$phone || !$text) {
+if (!$phone) {
 	http_response_code(400);
 	return;
 }
 
 // it's a computer
-if (!$detect->isMobile() || !$detect->isTablet())
+if (!$detect->isMobile() && !$detect->isTablet())
 {
 	header("Location: https://web.whatsapp.com/send?phone=$phone&text=$text");
 } else {
